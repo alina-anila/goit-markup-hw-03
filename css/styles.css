@@ -48,24 +48,23 @@ img {
 }
 .header-section {
     border-bottom: 2px solid #f1f1f1;
+    padding-top: 24px; 
+    padding-bottom: 24px;
 }
 .menu {
     display: flex;
 }
 .menu-item {
     display: flex;
-    padding-top: 32px;
-    padding-bottom: 32px;
     margin-top: 0px;
-    margin-bottom: 0px;   
+    margin-bottom: 0px; 
+    align-items: center;  
 }
 .menu-item .item:not(:last-child) {
     margin-right: 50px;
 }
 
 .logo {
-    padding-top: 24px; 
-    padding-bottom: 25px;
     margin-right: 93px;  
 
     font-family: Raleway;
@@ -114,8 +113,6 @@ img {
 
 .contacts-list {
     display: flex;
-    padding-top: 32px;
-    padding-bottom: 32px;
     margin-top: 0px;
     margin-bottom: 0px;
     margin-left: auto;
@@ -168,6 +165,8 @@ img {
     padding: 10px 32px;
     border-radius: 4px;
     text-align: center;
+    outline: none;
+    border: none;
 }
 
 /* ===========================Strengths=================================== */
@@ -264,7 +263,6 @@ img {
     text-align: center;
     letter-spacing: 0.03em;
     color: var( --secondary-text-color);
-    margin-top: 30px;
     margin-bottom: 10px;
 }
 .team-description {
@@ -275,7 +273,6 @@ img {
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
-    margin-bottom: 30px;
 }
 .team-images {
     display: flex;
@@ -287,9 +284,14 @@ img {
     margin-top: 30px;
     background-color: #FFFFFF;
     border-radius: 0 0 4px 4px;
-    box-shadow: 0 5px 3px -3px #575757ce
+    box-shadow: 0px 1px 3px rgb(0 0 0 / 12%),
+    0px 1px 1px rgb(0 0 0 / 14%),
+    0px 2px 1px rgb(0 0 0 / 20%)
 }
-
+.member-info {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
 /* ===========================footer=================================== */
 .footer {
     background-color: #2F303A;
@@ -341,13 +343,12 @@ img {
 .works-directions {
     display: flex;
     justify-content: center;
+    margin-bottom: 50px;
 }
 .works-directions .buttons:not(:last-child){
     margin-right: 8px;
 }
-.container .buttons {
-    margin-bottom: 50px;
-}
+
 .works-btn {   
     height: 38px;
     padding-top: 6px;
@@ -385,6 +386,7 @@ img {
     flex-wrap: wrap;
 }
 .projects-item {
+    display: block;
     margin-left: 30px;
     margin-top: 30px;
 }
