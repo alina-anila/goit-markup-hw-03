@@ -416,4 +416,6 @@ img {
     letter-spacing: 0.03em; 
     color: var(--primary-text-color)
 }
-
+.projects .links {
+    display: block;
+}
